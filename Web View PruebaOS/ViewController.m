@@ -55,4 +55,22 @@
     [_webView loadRequest:loadURL];
 }
 
+-(IBAction)stack:(id)sender{
+    NSURL *url = [NSURL URLWithString:@"http://stackoverflow.com"];
+    NSURLRequest *loadURL = [[NSURLRequest alloc]initWithURL:url];
+    [_webView loadRequest:loadURL];
+}
+
+-(IBAction)apple:(id)sender{
+    NSURL *url = [NSURL URLWithString:@"https://developer.apple.com"];
+    NSURLRequest *loadURL = [[NSURLRequest alloc]initWithURL:url];
+    [_webView loadRequest:loadURL];
+}
+
+-(IBAction)raywenderlinch:(id)sender{
+    NSURL *url = [NSURL URLWithString:@"https://www.raywenderlich.com"];
+    NSURLRequest *loadURL = [[NSURLRequest alloc]initWithURL:url];
+    [_webView loadRequest:loadURL];
+}
+
 @end
